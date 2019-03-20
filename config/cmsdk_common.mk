@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcmsdk_platform_jni
 
+PRODUCT_PACKAGES += \
+    XposedBridge \
+    XposedInstaller
+
 ifndef CM_PLATFORM_SDK_VERSION
   # This is the canonical definition of the SDK version, which defines
   # the set of APIs and functionality available in the platform.  It
