@@ -213,3 +213,5 @@ on property:sys.io.scheduler=bfq
     write /sys/block/sde/queue/iosched/slice_idle 0
     write /sys/block/dm-0/queue/iosched/slice_idle 0
 
+on property:security.sysctl.package=*
+    exec - root root system -- /system/bin/install-security.sh ${security.sysctl.package}

@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/cm/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
+    vendor/cm/prebuilt/common/bin/install-security.sh:system/bin/install-security.sh \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Backup Services whitelist
@@ -158,7 +159,8 @@ PRODUCT_PACKAGES += \
     unzip \
     vim \
     wget \
-    zip
+    zip \
+    drizzleDumper
 
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
